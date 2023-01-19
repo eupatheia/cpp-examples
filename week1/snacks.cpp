@@ -36,12 +36,12 @@ int main(int argc, char** argv)
     int quantity;
     string description;
 
-    file >> name; 
-    file >> cost; 
-    file >> quantity; 
-    file >> description; 
+    file >> name;
+    file >> cost;
+    file >> quantity;
+    file >> description;
     snacks[i] = Snack{ name, cost, quantity, description };
+    cout << snacks[i].name << endl;
   }
-  delete[] snacks; 
+  delete[] snacks;
 }
-
